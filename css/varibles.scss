@@ -1,0 +1,14 @@
+$bgColor : #F7F9F9;
+$headerHeight : .6rem;
+$basicWidth: 68%;
+$fontColor:#25242D;
+$color:#fff;
+@function calculateRem($size) {
+  $remSize: $size / 100px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
